@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #f4f6f9;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #1a252f;
+    color: white;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: 700;
+    color: #f39c12;
+    letter-spacing: 0.5px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    bottom: -4px;
+    left: 0;
+    background-color: #f39c12;
+    transition: width 0.3s ease;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+nav ul li a:hover {
+    color: #f39c12;
+}
+
+.container {
+    padding: 30px;
+    max-width: 1100px;
+    margin: 0 auto;
+    flex-grow: 1;
+    width: 100%;
+}
+
+.page-section {
+    animation: fadeIn 0.4s ease-in-out;
+}
+
+.banner {
+    background-color: #3498db;
+    color: white;
+    padding: 40px;
+    border-radius: 8px;
+    text-align: center;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 15px rgba(52, 152, 219, 0.2);
+}
+
+.banner h1 {
+    font-size: 2.2rem;
+    font-weight: 600;
+}
+
+.controls {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.controls input, .controls select {
+    padding: 10px 14px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    flex: 1;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.controls input:focus, .controls select:focus {
+    border-color: #3498db;
+}
+
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    display: flex;
+    flex-direction: column;
+    gap: 12px; /* Universal spacing between elements inside card */
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: fadeInUp 0.5s ease-out forwards;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 6px;
+    transition: transform 0.4s ease-in-out;
+}
+
+.card:hover img {
+    transform: scale(1.03);
+}
+
+.card h3, .card h4, .card p {
+    margin: 0;
+    line-height: 1.4;
+}
+
+.badge {
+    background-color: #e74c3c;
+    color: white;
+    padding: 4px 10px;
+    font-size: 12px;
+    font-weight: 500;
+    border-radius: 4px;
+    display: inline-block;
+    align-self: flex-start;
+}
+
+.content-box, .form-box {
+    background: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.form-box {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.form-box label {
+    display: block;
+    margin-top: 12px;
+    font-weight: 500;
+}
+
+.form-box input, .form-box select, .form-box textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+}
+
+button, .banner button, .form-box button {
+    background-color: #27ae60;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.banner button {
+    background-color: #f39c12;
+    margin-top: 15px;
+}
+
+button:hover, .banner button:hover, .form-box button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    filter: brightness(1.1);
+}
+
+button:active, .banner button:active, .form-box button:active {
+    transform: translateY(0);
+}
+
+.contact-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.contact-info, .map-box {
+    flex: 1;
+    min-width: 300px;
+}
+
+footer {
+    background-color: #1a252f;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: auto;
+    font-size: 14px;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+        padding: 15px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .controls {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .contact-container {
+        flex-direction: column;
+    }
+
+    .banner {
+        padding: 25px 15px;
+    }
+
+    .banner h1 {
+        font-size: 1.6rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 15px;
+    }
+
+    .cards-grid {
+        grid-template-columns: 1fr; /* Single column card layout on small screens */
+    }
+
+    .card img {
+        height: 180px;
+    }
+
+    .form-box, .content-box {
+        padding: 15px;
+    }
+
+    header .logo {
+        font-size: 20px;
+    }
+}

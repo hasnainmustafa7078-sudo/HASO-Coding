@@ -1,0 +1,108 @@
+									
+								    Java Script [Self one]
+
+
+									   History 
+
+			  JavaScript 1995 mein bani thi taake web pages ko interactive banaya ja sake (pehle sirf HTML/CSS static hoti thi).
+			  Iska naam "Java" se milta hai lekin dono alag languages hain — yeh confusion clear rehni chahiye kyunki class mein
+								  log kabhi mix kar dete hain.
+
+									     Role
+
+		JavaScript ka kaam hai webpage ko "zinda" banana — jaise button click karna, form check karna, content change hona bina page reload kiye.
+
+								 HTML = Structure,
+								 CSS = Design, 
+								 JavaScript = Behavior/Logic.
+
+				Teeno milke ek website banate hain — yeh mental model pakka kar lo, aage har topic isi pe based hoga.
+			Aajkal JavaScript sirf browser tak mahdood nahi — Node.js se backend bhi bana sakte ho, lekin abhi ke liye tumhe sirf 
+						browser-side JS pe focus rakhna hai jab tak class wahan tak na pahunche.
+
+
+							    Java Script Engines & Run-time Enviroment
+
+					JS Engine: Har browser ke andar ek Engine hota hai, joh tumhara likha hua JS code samjh ke 
+					computer ki language (Machine Code) mein convert krta hai, taake woh actually chal sake.
+
+			    Chrome ka engine V8 hai — yehi engine Node.js mein bhi use hota hai, isliye JS browser ke bahar bhi chal sakti hai.
+
+			Tumhe engine ke internal kaam-kaaj (parsing, compiling wagera) abhi detail mein janne ki zaroorat nahi — bas itna samjho: 
+							"engine = wo cheez jo tumhara code padh ke chalati hai."
+
+
+			Run-Time Enviroment: Runtime environment matlab wo poora maahol/setup jisme tumhara JS code chalta hai — sirf engine nahi,
+						balke uske sath extra cheezen bhi milti hain jo JS khud provide nahi karti.
+
+			Browser mein jab JS chalti hai, tumhe milta hai:
+					document object (DOM access — page ke elements ko chhoo sakte ho)
+					window object
+					alert(), setTimeout(), fetch() — yeh JS language ka part nahi hain, browser inhe provide karta hai
+
+			Node.js mein jab JS chalti hai, tumhe milta hai: 
+					File System Access 
+					Server bana skte ho
+					Lekin Document ya Windows nhi milegi--kiyunki wo browser-specific cheezen hai
+
+								  VARIABLES & DATA TYPES 
+
+			VARIABLES:
+
+			var   -> purana tareeqa, avoid karo         | var x = 5;
+			let   -> value change ho sakti hai          | let age = 20;
+			const -> value fix, change nahi hoti        | const pi = 3.14;
+
+			DATA TYPES (Primitive):
+
+			String     -> text value                    | "Ali"
+			Number     -> numeric value                 | 20
+			Boolean    -> true/false                    | true
+			Null       -> jaan-bujh ke "kuch nahi"       | null
+			Undefined  -> value set nahi hui abhi tak    | let x; // undefined
+
+			DATA TYPES (Non-Primitive):
+
+			Array   -> multiple values, ek list mein     | ["red","blue"]
+			Object  -> key-value pairs                   | {name:"Ali", age:20}
+
+
+			REMEMBER:
+			Value change hogi -> let
+			Value fix rahegi  -> const	
+
+
+								TYPE CONVERSION vs TYPE COERCION
+
+
+			TYPE CONVERSION (Explicit) 
+			-> Tum khud, jaan-bujh ke, ek type ko dusre mein badalte ho
+			-> Function use karke
+
+			String(123)      -> "123"   (number ko string banaya)
+			Number("123")    -> 123     (string ko number banaya)
+			Boolean(0)       -> false
+			Boolean(1)       -> true
+
+			TYPE COERCION (Implicit)
+			-> JS khud-ba-khud, background mein, type badal deta hai
+			-> Tumne nahi bola, JS ne khud decide kiya
+
+			"5" + 5     -> "55"    (JS ne number ko string bana diya)
+			"5" - 2     -> 3       (JS ne string ko number bana diya)
+			"5" * "2"   -> 10      (dono ko number bana diya)
+			1 + true    -> 2       (true ko 1 samjha)
+
+			MAIN FARAK (yaad rakhne wali baat):
+			Conversion = TUM karte ho, jaan bujh ke
+			Coercion   = JS khud karta hai, background mein, bina bataye
+
+			WAJAH ISKO SAMAJHNE KI:
+			Coercion se kabhi kabhi UNEXPECTED result aata hai,
+			isliye bade projects mein hamesha explicit Conversion
+			use karna better practice hai (taake result predictable rahe)
+
+
+
+
+

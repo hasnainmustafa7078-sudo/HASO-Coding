@@ -1,0 +1,200 @@
+{
+  "students": [
+    {
+      "id": "1730960",
+      "name": "Hasnain Riaz",
+      "course": "ACCP-AI",
+      "semester": "CPISM",
+      "batch": "AI202606C"
+    },
+    {
+      "id": "1730961",
+      "name": "Sanawer Ali",
+      "course": "ACCP-AI",
+      "semester": "CPISM",
+      "batch": "AI202606C"
+    },
+    {
+      "id": "1730962",
+      "name": "Abdul Saboor",
+      "course": "ACCP-AI",
+      "semester": "DISM",
+      "batch": "AI202606C"
+    },
+    {
+      "id": "1730963",
+      "name": "Sheroz Samoo",
+      "course": "ACCP-AI",
+      "semester": "DISM",
+      "batch": "AI202606C"
+    },
+    {
+      "id": "1730964",
+      "name": "Hassan",
+      "course": "ACCP-AI",
+      "semester": "HDSE I",
+      "batch": "AI202606C"
+    },
+    {
+      "id": "1730965",
+      "name": "Saad Ahmed",
+      "course": "ACCP-AI",
+      "semester": "HDSE I",
+      "batch": "AI202606C"
+    },
+    {
+      "id": "1730966",
+      "name": "Danish Iqbal",
+      "course": "ACCP-AI",
+      "semester": "HDSE II",
+      "batch": "AI202606C"
+    },
+    {
+      "id": "1730967",
+      "name": "Talha Aslam",
+      "course": "ACCP-AI",
+      "semester": "HDSE II",
+      "batch": "AI202606C"
+    },
+    {
+      "id": "1730968",
+      "name": "Ayan Malik",
+      "course": "ACCP-AI",
+      "semester": "ADSE I",
+      "batch": "AI202606C"
+    },
+    {
+      "id": "1730969",
+      "name": "Zain Abbas",
+      "course": "ACCP-AI",
+      "semester": "ADSE II",
+      "batch": "AI202606C"
+    }
+  ],
+
+  "parents": [
+    {
+      "id": 1,
+      "name": "Dr Riaz Ali",
+      "relation": "Father",
+      "studentName": "Hasnain Riaz"
+    },
+    {
+      "id": 2,
+      "name": "Shakeel Ali",
+      "relation": "Father",
+      "studentName": "Sanawer Ali"
+    },
+    {
+      "id": 3,
+      "name": "Sajad Ali",
+      "relation": "Father",
+      "studentName": "Abdul Saboor"
+    },
+    {
+      "id": 4,
+      "name": "Imran Tariq",
+      "relation": "Father",
+      "studentName": "Sheroz Samoo"
+    },
+    {
+      "id": 5,
+      "name": "Naveed Raza",
+      "relation": "Father",
+      "studentName": "Hassan Raza"
+    },
+    {
+      "id": 6,
+      "name": "Farooq Ahmed",
+      "relation": "Father",
+      "studentName": "Saad Ahmed"
+    },
+    {
+      "id": 7,
+      "name": "Javed Iqbal",
+      "relation": "Father",
+      "studentName": "Danish Iqbal"
+    },
+    {
+      "id": 8,
+      "name": "Aslam Khan",
+      "relation": "Father",
+      "studentName": "Talha Aslam"
+    },
+    {
+      "id": 9,
+      "name": "Sajid Malik",
+      "relation": "Father",
+      "studentName": "Ayan Malik"
+    },
+    {
+      "id": 10,
+      "name": "Arif Abbas",
+      "relation": "Father",
+      "studentName": "Zain Abbas"
+    }
+  ],
+
+  "teachers": [
+    {
+      "id": 1,
+      "name": "Muhammad Usman",
+      "department": "Faculty",
+      "experience": "6 Years"
+    },
+    {
+      "id": 2,
+      "name": "Ayesha Tariq",
+      "department": "Faculty",
+      "experience": "5 Years"
+    },
+    {
+      "id": 3,
+      "name": "Bilal Ahmed",
+      "department": "Faculty",
+      "experience": "7 Years"
+    },
+    {
+      "id": 4,
+      "name": "Sana Khan",
+      "department": "Faculty",
+      "experience": "4 Years"
+    },
+    {
+      "id": 5,
+      "name": "Usman Raza",
+      "department": "Faculty",
+      "experience": "8 Years"
+    },
+    {
+      "id": 6,
+      "name": "Hina Malik",
+      "department": "Faculty",
+      "experience": "3 Years"
+    },
+    {
+      "id": 7,
+      "name": "Ali Hassan",
+      "department": "Faculty",
+      "experience": "6 Years"
+    },
+    {
+      "id": 8,
+      "name": "Mariam Aslam",
+      "department": "Faculty",
+      "experience": "5 Years"
+    },
+    {
+      "id": 9,
+      "name": "Fahad Iqbal",
+      "department": "Faculty",
+      "experience": "9 Years"
+    },
+    {
+      "id": 10,
+      "name": "Sara Ahmed",
+      "department": "Faculty",
+      "experience": "4 Years"
+    }
+  ]
+}

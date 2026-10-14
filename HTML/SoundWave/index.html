@@ -1,0 +1,944 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SoundWave | Music Discovery</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
+
+    <!-- Bootstrap Icons -->
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    >
+
+    <!-- Google Font -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- Navbar -->
+
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+
+        <a class="navbar-brand" href="#home">
+            <i class="bi bi-soundwave"></i>
+            SoundWave
+        </a>
+
+        <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#mainNavbar"
+        >
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainNavbar">
+
+            <ul class="navbar-nav ms-auto">
+
+                <li class="nav-item">
+                    <a class="nav-link active" href="#home">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#music">Music</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#artist">Artist</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#player">Player</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+
+            </ul>
+
+        </div>
+    </div>
+</nav>
+
+
+<!-- Hero -->
+
+<section id="home" class="hero-section">
+    <div class="container">
+        <div class="row align-items-center min-vh-100">
+            <div class="col-lg-7">
+                <span class="hero-small-text">
+                    <i class="bi bi-headphones"></i>
+                    YOUR MUSIC. YOUR MOOD.
+                </span>
+
+                <h1>
+                    Feel The Music.<br>
+                    <span>Live The Moment.</span>
+                </h1>
+
+                <p>
+                    Discover amazing songs, artists and sounds.
+                    Stream your favorite music and enjoy every beat
+                    with SoundWave.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#music" class="btn btn-main">
+                        <i class="bi bi-play-fill"></i>
+                        Explore Music
+                    </a>
+
+                    <a href="#about" class="btn btn-outline-light">
+                        Learn More
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-lg-5 text-center">
+                <div class="hero-circle">
+                    <i class="bi bi-music-note-beamed"></i>
+                    <div class="floating-note note-one">
+                        ♪
+                    </div>
+
+                    <div class="floating-note note-two">
+                        ♫
+                    </div>
+
+                    <div class="floating-note note-three">
+                        ♪
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+
+<!-- About -->
+
+<section id="about" class="section-padding">
+    <div class="container">
+        <div class="row align-items-center g-5">
+            <div class="col-lg-6">
+                <div class="about-visual">
+                    <div class="about-icon">
+                        <i class="bi bi-vinyl-fill"></i>
+                    </div>
+
+                    <div class="about-wave">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+
+                <span class="section-label">ABOUT SOUNDWAVE</span>
+
+                <h2 class="section-title text-start">
+                    Music That Connects
+                    <span>People.</span>
+                </h2>
+
+                <p class="about-text">
+                    SoundWave is a modern music discovery platform
+                    designed for people who love exploring different
+                    sounds and artists.
+                </p>
+
+                <p class="about-text">
+                    From emotional OSTs to energetic Punjabi tracks,
+                    SoundWave brings your favorite music together in
+                    one simple and attractive experience.
+                </p>
+
+                <div class="row mt-4">
+
+                    <div class="col-6">
+                        <div class="about-stat">
+                            <h3>7+</h3>
+                            <p>Featured Songs</p>
+                        </div>
+                    </div>
+
+                    <div class="col-6">
+                        <div class="about-stat">
+                            <h3>24/7</h3>
+                            <p>Music Experience</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+
+<!-- Music -->
+
+<section id="music" class="section-padding music-section">
+    <div class="container">
+
+        <div class="text-center mb-5">
+            <span class="section-label">
+                OUR COLLECTION
+            </span>
+
+            <h2 class="section-title">
+                Explore Our <span>Music</span>
+            </h2>
+
+            <p class="section-description">
+                Select a song and start listening.
+            </p>
+        </div>
+
+
+        <!-- Search -->
+        <div class="row justify-content-center mb-5">
+            <div class="col-md-7">
+                <div class="search-box">
+                    <i class="bi bi-search"></i>
+
+                    <input
+                        type="text"
+                        id="songSearch"
+                        class="form-control"
+                        placeholder="Search songs..."
+                    >
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row g-4" id="musicCards">
+
+            <!-- Song1 -->
+
+            <div class="col-md-6 col-lg-4 song-card-wrapper">
+                <div class="music-card">
+                    <div class="album-art art-one">
+                        <i class="bi bi-music-note-beamed"></i>
+                    </div>
+
+                    <div class="music-card-body">
+                        <span class="song-number">
+                            TRACK 01
+                        </span>
+
+                        <h4>Khalouni N3ich</h4>
+
+                        <p>
+                            Yeh aik Arabi gaana hai, acha hai, aapne toh suna hi hoga, isliye isse bhi suno, sharafat se
+                        </p>
+
+                        <div class="song-footer">
+
+                            <span>
+                                <i class="bi bi-person"></i>
+                                Khalouni N3ich
+                            </span>
+
+                            <button
+                                class="btn play-song"
+                                data-song="Khalouni N3ich"
+                                data-video="8sZQcB6uhU8"
+                            >
+                                <i class="bi bi-play-fill"></i>
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- SONG 2 -->
+
+            <div class="col-md-6 col-lg-4 song-card-wrapper">
+
+                <div class="music-card">
+
+                    <div class="album-art art-two">
+                        <i class="bi bi-heart-fill"></i>
+                    </div>
+
+                    <div class="music-card-body">
+
+                        <span class="song-number">
+                            TRACK 02
+                        </span>
+
+                        <h4>Samjhawan — Female Version</h4>
+
+                        <p>
+                            yeh toh sab ne suna hoga, isliye isse bhi suno, sharafat se
+                        </p>
+
+                        <div class="song-footer">
+
+                            <span>
+                                <i class="bi bi-person"></i>
+                                Female Version
+                            </span>
+
+                            <button
+                                class="btn play-song"
+                                data-song="Samjhawan — Female Version"
+                                data-video="yQ6d627OZig"
+                            >
+                                <i class="bi bi-play-fill"></i>
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- SONG 3 -->
+
+            <div class="col-md-6 col-lg-4 song-card-wrapper">
+
+                <div class="music-card">
+
+                    <div class="album-art art-three">
+                        <i class="bi bi-film"></i>
+                    </div>
+
+                    <div class="music-card-body">
+
+                        <span class="song-number">
+                            TRACK 03
+                        </span>
+
+                        <h4>Hypnotic </h4>
+
+                        <p>
+                            No Captions
+                        </p>
+
+                        <div class="song-footer">
+
+                            <span>
+                                <i class="bi bi-person"></i>
+                                OST
+                            </span>
+
+                            <button
+                                class="btn play-song"
+                                data-song="Hypnotic "
+                                data-video="eBLe3c4oJas"
+                            >
+                                <i class="bi bi-play-fill"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- SONG 4 -->
+
+            <div class="col-md-6 col-lg-4 song-card-wrapper">
+                <div class="music-card">
+
+                    <div class="album-art art-four">
+                        <i class="bi bi-stars"></i>
+                    </div>
+
+                    <div class="music-card-body">
+                        <span class="song-number">
+                            TRACK 04
+                        </span>
+
+                        <h4>Jab Tu Yaad Aaye — OST</h4>
+
+                        <p>
+                            Yeh bhi same drame se hai, isliye isse bhi suno, sharafat se
+                        </p>
+
+                        <div class="song-footer">
+
+                            <span>
+                                <i class="bi bi-person"></i>
+                                OST
+                            </span>
+
+                            <button
+                                class="btn play-song"
+                                data-song="Jab Tu Yaad Aaye — OST"
+                                data-video="qnRyDz88QHU"
+                            >
+                                <i class="bi bi-play-fill"></i>
+                            </button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- SONG 5 -->
+
+            <div class="col-md-6 col-lg-4 song-card-wrapper">
+                <div class="music-card">
+
+                    <div class="album-art art-five">
+                        <i class="bi bi-lightning-fill"></i>
+                    </div>
+
+                    <div class="music-card-body">
+                        <span class="song-number">
+                            TRACK 05
+                        </span>
+
+                        <h4>Ho janay doh- OST</h4>
+
+                        <p>
+                            Acha OST hai, Most Underrated OST hai, suno sharafat se
+                        </p>
+
+                        <div class="song-footer">
+
+                            <span>
+                                <i class="bi bi-person"></i>
+                                Punjabi Music
+                            </span>
+
+                            <button
+                                class="btn play-song"
+                                data-song="Ho janay doh- OST"
+                                data-video="3OGiurju8vQ"
+                            >
+                                <i class="bi bi-play-fill"></i>
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- SONG 6 -->
+
+            <div class="col-md-6 col-lg-4 song-card-wrapper">
+
+                <div class="music-card">
+
+                    <div class="album-art art-six">
+                        <i class="bi bi-cloud-moon-fill"></i>
+                    </div>
+
+                    <div class="music-card-body">
+
+                        <span class="song-number">
+                            TRACK 06
+                        </span>
+
+                        <h4>Nafrat</h4>
+
+                        <p>
+                            Rula dega ye gana, suno sharafat se
+                        </p>
+
+                        <div class="song-footer">
+
+                            <span>
+                                <i class="bi bi-person"></i>
+                                Darshan Raval
+                            </span>
+
+                            <button
+                                class="btn play-song"
+                                data-song="Nafrat"
+                                data-video="bJdaz4eIl_8"
+                            >
+                                <i class="bi bi-play-fill"></i>
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- SONG 7 -->
+
+            <div class="col-md-6 col-lg-4 song-card-wrapper">
+
+                <div class="music-card">
+
+                    <div class="album-art art-seven">
+                        <i class="bi bi-disc-fill"></i>
+                    </div>
+
+                    <div class="music-card-body">
+
+                        <span class="song-number">
+                            TRACK 07
+                        </span>
+
+                        <h4>Sohnea — Remix</h4>
+
+                        <p>
+                            Maze wala gana hai, suno sharafat se
+                        </p>
+
+                        <div class="song-footer">
+
+                            <span>
+                                <i class="bi bi-person"></i>
+                                Remix
+                            </span>
+
+                            <button
+                                class="btn play-song"
+                                data-song="Sohnea — Remix"
+                                data-video="yv6loraIyhI"
+                            >
+                                <i class="bi bi-play-fill"></i>
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- MUSIC PLAYER -->
+
+<section id="player" class="section-padding player-section">
+
+    <div class="container">
+
+        <div class="text-center mb-5">
+
+            <span class="section-label">
+                MUSIC PLAYER
+            </span>
+
+            <h2 class="section-title">
+                Now <span>Playing</span>
+            </h2>
+
+        </div>
+
+
+        <div class="player-container">
+
+            <div class="row g-4 align-items-center">
+
+                <div class="col-lg-8">
+
+                    <div class="video-container">
+
+                        <iframe
+                            id="youtubePlayer"
+                            src="https://www.youtube.com/embed/8sZQcB6uhU8?rel=0"
+                            title="SoundWave Music Player"
+                            allow="autoplay; encrypted-media"
+                            allowfullscreen>
+                        </iframe>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-lg-4">
+
+                    <div class="player-info">
+
+                        <span class="playing-label">
+                            <span class="pulse-dot"></span>
+                            NOW PLAYING
+                        </span>
+
+                        <h3 id="currentSong">
+                            Khalouni N3ich
+                        </h3>
+
+                        <span class="player-meta" id="currentMeta"></span>
+
+                        <p id="currentDesc">
+                            Select any track from the music
+                            collection to play it here.
+                        </p>
+
+                        <div class="player-controls">  
+                            <button
+                                class="control-btn"
+                                id="previousBtn"
+                                title="Previous"
+                            >
+                                <i class="bi bi-skip-start-fill"></i>
+                            </button>
+
+                            <button
+                                class="control-btn main-control"
+                                id="reloadBtn"
+                                title="Replay"
+                            >
+                                <i class="bi bi-arrow-repeat"></i>
+                            </button>
+
+                            <button
+                                class="control-btn"
+                                id="nextBtn"
+                                title="Next"
+                            >
+                                <i class="bi bi-skip-end-fill"></i>
+                            </button>
+                        </div>
+
+                        <p class="small-note">
+                            <i class="bi bi-info-circle"></i>
+                            Yeh gaane mein Youtube se uthaye hai, Thats wyh, sharafat se jaakr Youtube mein dekho...
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- FEATURED ARTIST -->
+
+<section id="artist" class="section-padding artist-section">
+
+    <div class="container">
+        <div class="row align-items-center g-5">
+            <div class="col-lg-5 text-center">
+                <div class="artist-image">
+                    <div class="artist-initial">
+                        SG
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-lg-7">
+
+                <span class="section-label">
+                    FEATURED ARTIST
+                </span>
+
+                <h2 class="section-title text-start">
+                    Shreya <span>Goushal</span>
+                </h2>
+
+                <p class="artist-description">
+                    <strong>Sherya Goushal aik achi lrki hai, aur uski 
+                        aawaz bhi bohut achi hai, aur 
+                    </strong>
+                </p>
+
+                <p class="artist-description">
+                    <strong>mujhe iski voice aur gaane ache lagte hai, aap bhi suno
+                    wrna maarunga</strong>
+                </p>
+
+                <div class="artist-buttons">
+
+                    <a href="#music" class="btn btn-main">
+                        <i class="bi bi-music-note"></i>
+                        Explore Music
+                    </a>
+
+                    <a
+                        href="https://www.youtube.com/"
+                        target="_blank"
+                        class="btn btn-outline-light"
+                    >
+                        <i class="bi bi-youtube"></i>
+                        YouTube
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact -->
+
+<section id="contact" class="section-padding contact-section">
+    <div class="container">
+        <div class="text-center mb-5">
+
+            <span class="section-label">
+                Aate jaate rehna, humse baat karte rehna
+            </span>
+
+            <h2 class="section-title">
+                Contact <span>Us</span>
+            </h2>
+
+            <p class="section-description">
+                Have a question or suggestion? Send us a message.
+            </p>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="contact-card">
+                    <form id="contactForm" novalidate>
+                        <div class="row g-4">
+                            <div class="col-md-6">
+                                <label for="name" class="form-label">
+                                    Name
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="name"
+                                    class="form-control"
+                                    placeholder="Your name"
+                                    required
+                                    minlength="3"
+                                    maxlength="40"
+                                    autocomplete="name"
+                                    title="Letters only, at least 3 letters"
+                                >
+
+                                <div class="invalid-feedback" id="nameError" role="alert"></div>
+                            </div>
+
+                            <div class="col-md-6">
+
+                                <label for="email" class="form-label">
+                                    Email
+                                </label>
+
+                                <input
+                                    type="email"
+                                    id="email"
+                                    class="form-control"
+                                    placeholder="you@example.com"
+                                    required
+                                    maxlength="254"
+                                    autocomplete="email"
+                                    title="Enter a valid email, e.g. name@example.com"
+                                >
+
+                                <div class="invalid-feedback" id="emailError" role="alert"></div>
+                            </div>
+
+                            <div class="col-12">
+
+                                <label for="subject" class="form-label">
+                                    Subject
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="subject"
+                                    class="form-control"
+                                    placeholder="Subject"
+                                    required
+                                    maxlength="100"
+                                >
+
+                                <div class="invalid-feedback" id="subjectError" role="alert"></div>
+                            </div>
+
+                            <div class="col-12">
+                                <label for="message" class="form-label">
+                                    Message
+                                </label>
+
+                                <textarea
+                                    id="message"
+                                    class="form-control"
+                                    rows="5"
+                                    placeholder="Write your message..."
+                                    required
+                                ></textarea>
+
+                                <div class="invalid-feedback" id="messageError" role="alert"></div>
+                            </div>
+
+                            <div class="col-12 text-center">
+
+                                <button
+                                    type="submit"
+                                    class="btn btn-main submit-btn"
+                                >
+                                    <i class="bi bi-send-fill"></i>
+                                    Send Message
+                                </button>
+
+                            </div>
+                        </div>
+                    </form>
+                    <div
+                        id="formMessage"
+                        class="form-message"
+                    ></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Footer -->
+
+<footer class="footer">
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-lg-5">
+
+                <a class="footer-brand" href="#home">
+                    <i class="bi bi-soundwave"></i>
+                    SoundWave
+                </a>
+
+                <p>
+                    Discover music, explore artists and enjoy
+                    your favorite sounds with SoundWave.
+                </p>
+
+                <div class="social-icons">
+                    <a href="#" aria-label="Facebook">
+                        <i class="bi bi-facebook"></i>
+                    </a>
+
+                    <a href="#" aria-label="Instagram">
+                        <i class="bi bi-instagram"></i>
+                    </a>
+
+                    <a href="#" aria-label="YouTube">
+                        <i class="bi bi-youtube"></i>
+                    </a>
+
+                    <a href="#" aria-label="Twitter">
+                        <i class="bi bi-twitter-x"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+                <h5>Quick Links</h5>
+                <ul class="footer-links">
+
+                    <li>
+                        <a href="#home">Home</a>
+                    </li>
+
+                    <li>
+                        <a href="#about">About</a>
+                    </li>
+
+                    <li>
+                        <a href="#music">Music</a>
+                    </li>
+
+                    <li>
+                        <a href="#artist">Artist</a>
+                    </li>
+                </ul>
+            </div>
+
+
+            <div class="col-lg-4 col-md-6">
+                <h5>Contact</h5>
+
+                <p>
+                    <i class="bi bi-envelope"></i>
+                    hasnainmustafa7078@gmail.com
+                </p>
+
+                <p>
+                    <i class="bi bi-telephone"></i>
+                    +92 320 2450759
+                </p>
+
+                <p>
+                    <i class="bi bi-geo-alt"></i>
+                    Aptech MSG, Pakistan
+                </p>
+            </div>
+        </div>
+
+        <hr>
+        <div class="footer-bottom">
+            <p>
+                © 2026 SoundWave. All Rights Reserved.
+            </p>
+
+            <p>
+                Designed with HTML5, CSS3, Bootstrap & JavaScript.
+            </p>
+        </div>
+    </div>
+</footer>
+
+<!-- Bootstrap JS -->
+<script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+</script>
+
+<!-- Custom JS -->
+<script src="script.js"></script>
+
+</body>
+</html>

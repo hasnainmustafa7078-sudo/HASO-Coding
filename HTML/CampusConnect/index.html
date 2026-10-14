@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CampusConnect - College Event Management</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header & Navigation -->
+    <header>
+        <div class="logo">CampusConnect</div>
+        <nav>
+            <ul>
+                <li><a href="#" onclick="showPage('home')">Home</a></li>
+                <li><a href="#" onclick="showPage('about')">About Us</a></li>
+                <li><a href="#" onclick="showPage('events')">Event Catalog</a></li>
+                <li><a href="#" onclick="showPage('gallery')">Gallery</a></li>
+                <li><a href="#" onclick="showPage('feedback')">Feedback</a></li>
+                <li><a href="#" onclick="showPage('contact')">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+
+        <section id="home-page" class="page-section">
+            <div class="banner">
+                <h1>Welcome to Campus Event Hub</h1>
+                <p>Stay Updated, Stay Involved with all upcoming campus happenings!</p>
+                <button onclick="showPage('events')">Explore Events</button>
+            </div>
+            <h2>Upcoming Event Highlights</h2>
+            <div id="home-highlights" class="cards-grid"></div>
+        </section>
+
+        <!-- About Page Section -->
+        <section id="about-page" class="page-section" style="display:none;">
+            <h2>About CampusConnect</h2>
+            <div class="content-box">
+                <h3>Institute Overview</h3>
+                <p>CampusConnect is the central portal for <strong>MUGHAL'S College</strong>. We organize technical, cultural, and sports events to showcase student talent.</p>
+                <h3>Annual Highlights</h3>
+                <ul>
+                    <li><strong>TechFest:</strong> Coding, robotics, and innovation competitions.</li>
+                    <li><strong>Cultural Week:</strong> Music, drama, and art performances.</li>
+                    <li><strong>Sports Meet:</strong> Inter-college tournaments.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="events-page" class="page-section" style="display:none;">
+            <h2>Event Catalog</h2>
+            <div class="controls">
+                <input type="text" id="search-input" placeholder="Search event by name..." onkeyup="filterEvents()">
+                <select id="category-filter" onchange="filterEvents()">
+                    <option value="All">All Categories</option>
+                    <option value="Technical">Technical</option>
+                    <option value="Cultural">Cultural</option>
+                    <option value="Sports">Sports</option>
+                    <option value="Picnic">Picnic</option>
+                </select>
+                <select id="sort-order" onchange="filterEvents()">
+                    <option value="date">Sort by Date</option>
+                    <option value="title">Sort by Name</option>
+                </select>
+            </div>
+            <div id="events-grid" class="cards-grid"></div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section id="gallery-page" class="page-section" style="display:none;">
+            <h2>Event Gallery</h2>
+            <div class="controls">
+                <select id="gallery-year-filter" onchange="renderGallery()">
+                    <option value="All">All Years</option>
+                    <option value="2025-26">2025-26</option>
+                    <option value="2024-25">2024-25</option>
+                </select>
+            </div>
+            <div id="gallery-grid" class="cards-grid"></div>
+        </section>
+
+        <!-- Feedback Form Section (Static UI) -->
+        <section id="feedback-page" class="page-section" style="display:none;">
+            <h2>Feedback Form</h2>
+            <form class="form-box" onsubmit="event.preventDefault(); alert('Demo Feedback Submitted!');">
+                <label>Full Name:</label>
+                <input type="text" required>
+                
+                <label>Email Address:</label>
+                <input type="email" required>
+                
+                <label>User Type:</label>
+                <select>
+                    <option>Student</option>
+                    <option>Faculty</option>
+                </select>
+
+                <label>Rating:</label>
+                <select>
+                    <option>5 - Excellent</option>
+                    <option>4 - Good</option>
+                    <option>3 - Average</option>
+                </select>
+
+                <label>Comments:</label>
+                <textarea rows="4"></textarea>
+
+                <button type="submit">Submit Feedback</button>
+            </form>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact-page" class="page-section" style="display:none;">
+            <h2>Contact Coordinators</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="card">
+                        <h3>Hasnain Riaz</h3>
+                        <p>Faculty Coordinator</p>
+                        <p>Email: hasnainmustafa7078@gmail.comd</p>
+                        <p>Phone: +92 320 2450759</p>
+                    </div>
+                    <div class="card">
+                        <h3>Saboor Ali</h3>
+                        <p>Student Coordinator</p>
+                        <p>Email: saboormughal50@gmail.com</p>
+                    </div>
+                    <div class="card">
+                        <h3>Sanawer Ali</h3>
+                        <p>Student Coordinator</p>
+                        <p>Email: sanawerkhatri__@gmail.com</p>
+                    </div>
+                    <div class="card">
+                        <h3>Sheroz Samoo </h3>
+                        <p>Student Coordinator</p>
+                        <p>Email: sherozsamoo__@gmail.com</p>
+                    </div>
+                </div>
+                <div class="map-box">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3619.4477817006836!2d67.065!3d24.87!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjTCsDUyJzEyLjAiTiA2N8KwMDMnNTQuMCJF!5e0!3m2!1sen!2s!4v1600000000000" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 CampusConnect - College Event Information System</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="events.js"></script>
+</body>
+</html>
